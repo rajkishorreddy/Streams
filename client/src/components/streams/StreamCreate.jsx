@@ -7,7 +7,6 @@ class StreamCreate extends React.Component {
   //   return <input {...formProps.input} />;
   // }
   renderError({ error, touched }) {
-    console.log(touched, error);
     if (touched && error) {
       return (
         <div className="ui error message">
