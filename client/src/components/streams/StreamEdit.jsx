@@ -10,6 +10,9 @@ class StreamEdit extends React.Component {
     this.props.editStream(this.props.match.params.id, formValues);
   };
   render() {
+    if (!this.props.stream) {
+      return <div>Loading...</div>;
+    }
     return (
       <div>
         <h3>Edit a Stream</h3>
